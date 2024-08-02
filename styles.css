@@ -1,0 +1,124 @@
+body {
+    font-family: 'Verdana', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('assets/images/fondo.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    text-align: center;
+    color: #191a1b;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 0 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #19191a;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-weight: bold;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    background-color: #486380;
+    color: #fff;
+}
+
+main {
+    padding: 40px 20px;
+    background-color: rgba(255, 255, 255, 0.95);
+    max-width: 900px;
+    margin: 40px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    display: none;
+}
+
+section.active {
+    display: block;
+}
+
+h2 {
+    border-bottom: 3px solid #007BFF;
+    padding-bottom: 10px;
+    color: #3e3f41;
+    font-size: 1.5em;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px 0;
+}
+
+footer {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 15px 0;
+    position: static; /* Footer estático */
+    width: 100%;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+    color: #3e3f41;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    nav ul li a {
+        padding: 8px 15px;
+        font-size: 0.9em;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    footer {
+        padding: 10px 0;
+    }
+}
